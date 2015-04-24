@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+ 
+
+ 
+  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+      android:layout_width="wrap_content"
+      android:layout_height="match_parent"
+      android:orientation="horizontal" >
+      
+      <TextView
+     android:id="@+id/v2"
+     android:layout_width="fill_parent"
+     android:layout_height="50dp"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+     android:text=" "
+     android:background="@color/hong" />
+ <TextView
+     android:id="@+id/v1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_centerHorizontal="true"
+     android:layout_alignParentTop="true"
+     android:layout_marginTop="15dp"
+     android:text="收藏主页"
+     android:textColor="#ffffff"
+     android:textSize="20sp" />
+
+         <ScrollView  android:layout_width="fill_parent"  
+            android:layout_height="fill_parent"   
+            android:layout_marginBottom="40dp"    
+      android:layout_below="@+id/v2"
+             android:background="#ffffff" > 
+        <LinearLayout 
+          android:id="@+id/v3"
+      android:layout_width="fill_parent"
+      android:layout_height="match_parent"
+      android:layout_marginTop="30dp"
+      android:orientation="horizontal" >
+
+
+           <TableLayout
+         android:id="@+id/table1"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="0dp"
+         android:layout_alignParentBottom="true"
+         android:layout_alignParentLeft="true"
+         android:background="#ffffff"
+         android:collapseColumns="10"
+         android:padding="0dp"
+         android:shrinkColumns="1"
+         android:stretchColumns="0" >   
+<View                              
+        android:layout_height="1dip"   
+        android:background="#a9a9a9" />
+<TableRow>
+    <RelativeLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+    <Button
+             android:id="@+id/gerenbutton1"
+             android:layout_width="fill_parent"
+             android:layout_height="60dp"
+             android:text="" 
+             android:background="#ffffff"/>
+     <ImageView
+    android:id="@+id/gerentouxiang1"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_marginLeft="20dp"
+    android:contentDescription="@string/app_name"
+    android:src="@drawable/taiquandao" />
+<TextView
+     android:id="@+id/gerennichen"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toRightOf="@+id/gerentouxiang1"
+     android:layout_marginLeft="10dp"
+     android:layout_marginTop="5dp"
+     android:text="跆拳道"
+     android:textColor="#000000"
+     android:textSize="18sp" />
+<TextView
+     android:id="@+id/qianming"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toRightOf="@+id/gerentouxiang1"
+     android:layout_marginLeft="10dp"
+     android:layout_marginTop="35dp"
+     android:text="简介：....."
+     android:textSize="14sp"/>
+
+<ImageButton
+     android:id="@+id/person1"
+     android:layout_toRightOf="@+id/gerentouxiang1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="185dp"
+     android:layout_marginTop="25dp"
+     android:background="#ffffff"
+     android:src="@drawable/person" />
+</RelativeLayout>
+    </TableRow> 
+ 
+    <View                              
+        android:layout_height="1dip"   
+        android:background="#a9a9a9" />
+    <TableRow>
+    <RelativeLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+    <Button
+             android:id="@+id/gerenbutton2"
+             android:layout_width="fill_parent"
+             android:layout_height="60dp"
+             android:text="" 
+             android:background="#ffffff"/>
+    <ImageView
+    android:id="@+id/gerentouxiang1"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_marginLeft="20dp"
+    android:contentDescription="@string/app_name"
+    android:src="@drawable/taiquandao" />
+    <TextView
+     android:id="@+id/gerennichen"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toRightOf="@+id/gerentouxiang1"
+     android:layout_marginLeft="10dp"
+     android:layout_marginTop="5dp"
+     android:text="高数"
+     android:textColor="#000000"
+     android:textSize="18sp" />
+<TextView
+     android:id="@+id/qianming"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toRightOf="@+id/gerentouxiang1"
+     android:layout_marginLeft="10dp"
+     android:layout_marginTop="35dp"
+     android:text="简介：....."
+     android:textSize="14sp" />
+
+    <ImageButton
+     android:id="@+id/person3"
+     android:layout_toRightOf="@+id/gerentouxiang1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="185dp"
+     android:layout_marginTop="25dp"
+     android:background="#ffffff"
+     android:src="@drawable/person" />
+    
+</RelativeLayout>
+    </TableRow>
+    <View                              
+        android:layout_height="1dip"   
+        android:background="#a9a9a9" />
+    <TableRow>
+    <RelativeLayout 
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="5dp"
+    android:layout_marginBottom="5dp">
+   <Button
+             android:id="@+id/gerenbutton3"
+             android:layout_width="fill_parent"
+             android:layout_height="60dp"
+             android:text="" 
+             android:background="#ffffff"/>
+   <ImageView
+    android:id="@+id/gerentouxiang1"
+    android:layout_width="60dp"
+    android:layout_height="60dp"
+    android:layout_marginLeft="20dp"
+    android:contentDescription="@string/app_name"
+    android:src="@drawable/taiquandao" />
+    <TextView
+     android:id="@+id/gerennichen"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toRightOf="@+id/gerentouxiang1"
+     android:layout_marginLeft="10dp"
+     android:layout_marginTop="5dp"
+     android:text="声乐"
+     android:textColor="#000000"
+     android:textSize="18sp"/>
+<TextView
+     android:id="@+id/qianming"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_toRightOf="@+id/gerentouxiang1"
+     android:layout_marginLeft="10dp"
+     android:layout_marginTop="35dp"
+     android:text="简介：....."
+     android:textSize="14sp" />
+
+
+    <ImageButton
+     android:id="@+id/person4"
+     android:layout_toRightOf="@+id/gerentouxiang1"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:layout_marginLeft="185dp"
+     android:layout_marginTop="25dp"
+     android:background="#ffffff"
+     android:src="@drawable/person" />
+    
+</RelativeLayout>
+    </TableRow> 
+    <View                              
+        android:layout_height="1dip"   
+        android:background="#a9a9a9" />
+    </TableLayout>
+            
+</LinearLayout>
+        </ScrollView> 
+<LinearLayout 
+          android:id="@+id/v0"
+      android:layout_width="fill_parent"
+      android:layout_height="match_parent"
+      android:orientation="horizontal"
+      android:layout_below="@+id/v2">
+ 
+      <Button
+    android:id="@+id/shetuan"
+    android:layout_weight="1"
+    android:layout_width="fill_parent"
+    android:layout_height="30dp"
+    android:layout_alignParentBottom="true"
+    android:text="社团" 
+    android:background="#ffffff"
+    android:textSize="15sp"
+    android:textColor="#dcdcdc"/>
+ 
+ <Button
+     android:id="@+id/jineng"
+     android:layout_weight="1"
+     android:layout_width="fill_parent"
+     android:layout_height="30dp"
+     android:layout_alignParentBottom="true"
+     android:background="#ffffff"
+    android:textColor="@color/hong"
+    android:textSize="15sp"
+     android:text="技能" />
+ <Button
+     android:id="@+id/geren"
+     android:layout_weight="1"
+     android:layout_width="fill_parent"
+     android:layout_height="30dp"
+     android:layout_alignParentBottom="true"
+     android:background="#ffffff"
+    android:textColor="#dcdcdc"
+    android:textSize="15sp"
+     android:text="个人" />
+ 
+          </LinearLayout>            
+<LinearLayout 
+      android:layout_width="fill_parent"
+      android:layout_height="match_parent"
+      android:orientation="horizontal" 
+      android:gravity="bottom">
+
+    
+
+         <TextView
+     android:id="@+id/v0"
+     android:layout_width="fill_parent"
+     android:layout_height="50dp"
+     android:layout_alignParentLeft="true"
+     android:layout_alignParentTop="true"
+     android:text=" "
+     android:background="@color/hong"
+     android:textSize="10pt" />
+</LinearLayout>
+
+
+         
+        </RelativeLayout>

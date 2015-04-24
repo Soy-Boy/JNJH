@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/shezhizhuyelayout"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
+
+    <TextView
+        android:id="@+id/xx"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/hong"
+        android:text=" " />
+
+    <Button
+        android:id="@+id/fenlei1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/hong"
+        android:text="设置"
+        android:textColor="#ffffff"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="40dp"
+        android:orientation="vertical" >
+        <Button 
+            android:id="@+id/shezhizhuye_zhuxiao"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="注销"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/jinengzhuyejineng"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/hong"
+            android:text="技能"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/jinengzhuyexiaoxi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/hong"
+            android:text="消息"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/jinengzhuyegerenzhuye"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/hong"
+            android:text="个人"
+            android:textColor="#ffffff"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/jinengzhuyeshezhi"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@color/hong"
+            android:text="设置"
+            android:textColor="#b8860b"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.jnjh"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.jnjh.gerenzhuyeActivity"
+            android:label="@string/app_name" >
+            
+        </activity>
+        <activity android:name="com.example.jnjh.sort_1"/>
+        <activity android:name="com.example.jnjh.sort_2"/>
+        <activity android:name="com.example.jnjh.jinengjieshaoActivity"></activity>
+        <activity android:name="com.example.jnjh.shetuanzhuyeActivity"></activity>
+        <activity android:name="com.example.jnjh.guanzhuzhuyeActivity"></activity>
+         <activity android:name="com.example.jnjh.shezhizhuyeActivity"></activity>
+         <activity android:name="com.example.jnjh.jinengzhuyeActivity"
+             android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+          <activity android:name="com.example.jnjh.gerenxiangxiziliaoActivity"></activity>
+          <activity android:name="com.example.jnjh.pingjialiuyanActivity"></activity>
+          <activity android:name="com.example.jnjh.gerenwoderenwuActivity"></activity>
+          <activity android:name="com.example.jnjh.bianjiActivity"
+              android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+          <activity android:name="com.example.jnjh.fasongActivity"
+                    android:label="您的信息已经发送成功"
+                    android:theme="@android:style/Theme.Dialog"></activity>
+          
+          <activity android:name="com.example.jnjh.guanzhushetuanActivity"></activity>
+          <activity android:name="com.example.jnjh.guanzhujinengActivity"></activity>
+          
+          <activity android:name="com.example.jnjh.shetuanchengyuanActivity"></activity>
+          <activity android:name="com.example.jnjh.stpingjialiuyanActivity"></activity>
+          <activity android:name="com.example.jnjh.stxiangxiziliaoActivity"></activity>
+          <activity android:name="com.example.jnjh.GerencopyActivity"></activity>
+          <activity android:name="com.example.jnjh.BrowseShetuanxiaoxiActivity"></activity>
+         
+          <activity android:name="com.example.jnjh.jinengdarenActivity"></activity>
+          <activity android:name="com.example.jnjh.xuexiziyuanActivity"></activity>
+          <activity android:name="com.example.jnjh.jinengwentiActivity"
+                      android:windowSoftInputMode="adjustPan|stateHidden"
+                       ></activity>
+          <activity android:name="com.example.jnjh.denglu">
+              <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+          </activity>
+          <activity android:name="com.example.jnjh.wentifabuActivity"
+              android:windowSoftInputMode="adjustPan|stateHidden"></activity>
+          <activity android:name="com.example.jnjh.guanzhuActivity"
+                    android:label="已关注"
+                    android:theme="@android:style/Theme.Dialog"></activity>
+          <activity android:name="com.example.jnjh.xiazaichenggongActivity"
+                    android:label="下载成功"
+                    android:theme="@android:style/Theme.Dialog"></activity>
+          <activity android:name="com.example.jnjh.zhuce"></activity>
+            <activity android:name="com.example.jnjh.stxiaoxinpingtaiActivity"></activity>
+            <activity android:name="fangkezhuye"></activity>
+    </application>
+
+</manifest>

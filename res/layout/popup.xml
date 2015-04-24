@@ -1,0 +1,507 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#ffffff" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TableLayout
+                android:id="@+id/table1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:collapseColumns="10"
+                android:padding="3dp"
+                android:shrinkColumns="1"
+                android:stretchColumns="0" >
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/shouqi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="收起"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/quanbu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="全部技能"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/yingyu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="英语"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/riyu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="日语"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/fayu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="法语"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/deyu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="德语"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/eyu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="俄语"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/hanyu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="韩语"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/qiulei"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="球类"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/jianmeiwushu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="健美武术"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/qipai"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="棋牌"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/lunhua"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="运动轮滑"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/gechang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="歌唱演讲"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/wudao"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="舞蹈"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/shuhua"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="书画摄影"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/xiqu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="戏曲乐器"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/biaoyan"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="表演"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/dongman"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="动漫"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/pengren"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="烹饪"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/shougong"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="手工"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/weixiu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="维修"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/dianzi"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="电子娱乐"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/shishang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="时尚搭配"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/huazhuang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="化妆美容"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/xinli"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="心理"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/biancheng"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="编程语言"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/shiping"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="视频制作"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/tuxiang"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="图像处理"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/ruanjian"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="软件系统"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/shujuku"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="数据库"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/web"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="web技术"
+                        android:textColor="@color/hong" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <Button
+                        android:id="@+id/dianziweixiu"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:background="#ffffff"
+                        android:text="电子维修"
+                        android:textColor="@color/hong" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

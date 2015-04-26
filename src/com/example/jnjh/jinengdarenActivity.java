@@ -86,8 +86,7 @@ public class jinengdarenActivity extends Activity implements
 		Darens darens = darensList.get(position);
 		Intent intent = new Intent(this, fangkezhuye.class);
 		intent.putExtra("darenName", darens.getName());
+		System.out.println(darens.getName());
 		startActivity(intent);
-
 	}
-
 }

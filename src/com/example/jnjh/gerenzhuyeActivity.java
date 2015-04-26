@@ -16,7 +16,6 @@ import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.ImageButton;
@@ -35,9 +34,9 @@ public class gerenzhuyeActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.gerenzhuye);
-		nicheng = (TextView)findViewById(R.id.fangkezhuye_nicheng);
-		dengji = (TextView)findViewById(R.id.fangkezhuye_dengji);
-		qianming = (TextView)findViewById(R.id.fangkezhuye_qianming);
+		nicheng = (TextView)findViewById(R.id.gerenzhuye_nicheng);
+		dengji = (TextView)findViewById(R.id.gerenzhuye_dengji);
+		qianming = (TextView)findViewById(R.id.gerenzhuye_qianming);
 		//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ìø×ª¹¦ÄÜ
 		ImageButton guanzhu = (ImageButton) findViewById(R.id.guanzhu);
 		guanzhu.setOnClickListener(new Button.OnClickListener() {
@@ -102,24 +101,6 @@ public class gerenzhuyeActivity extends Activity {
 			{
 				Intent intent = new Intent();
 				intent.setClass(gerenzhuyeActivity.this, gerenwoderenwuActivity.class);
-				startActivity(intent);
-			}
-		});
-		Button wodeshoucang = (Button) findViewById(R.id.wodeshoucang);
-		wodeshoucang.setOnClickListener(new Button.OnClickListener() {
-			public void onClick(View v)
-			{
-				Intent intent = new Intent();
-				intent.setClass(gerenzhuyeActivity.this, guanzhuzhuyeActivity.class);
-				startActivity(intent);
-			}
-		});
-		Button faxiaoxi = (Button) findViewById(R.id.faxiaoxi);
-		faxiaoxi.setOnClickListener(new Button.OnClickListener() {
-			public void onClick(View v)
-			{
-				Intent intent = new Intent();
-				intent.setClass(gerenzhuyeActivity.this, bianjiActivity.class);
 				startActivity(intent);
 			}
 		});

@@ -538,8 +538,7 @@ public class jinengzhuyeActivity extends Activity {
 				bundle.putString("jinengname", name);
 				bundle.putString("jinengjianjie", jianjie);
 				intent.putExtras(bundle);
-				intent.setClass(jinengzhuyeActivity.this,
-						jinengjieshaoActivity.class);
+				intent.setClass(jinengzhuyeActivity.this,jinengjieshaoActivity.class);
 				startActivity(intent);
 			}
 

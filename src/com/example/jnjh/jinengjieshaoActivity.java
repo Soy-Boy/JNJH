@@ -15,10 +15,9 @@ public class jinengjieshaoActivity extends Activity {
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.jinengjieshao);
-		String jinengname1;
+		final String jinengname1;
 		String jinengjianjie1;
 		Intent inte = getIntent();
-		Bundle name = inte.getExtras();
 		jinengname1 = inte.getStringExtra("jinengname");
 		jinengjianjie1 = inte.getStringExtra("jinengjianjie");
 
@@ -32,9 +31,9 @@ public class jinengjieshaoActivity extends Activity {
 		fanhui.setOnClickListener(new Button.OnClickListener() {
 			public void onClick(View v) {
 				Intent intent = new Intent();
-				intent.setClass(jinengjieshaoActivity.this, sort_1.class);
+				intent.setClass(jinengjieshaoActivity.this, jinengzhuyeActivity.class);
 				startActivity(intent);
-
+				jinengjieshaoActivity.this.finish();
 			}
 		});
 		Button qushetuanba = (Button) findViewById(R.id.qushetuanba);
@@ -56,8 +55,7 @@ public class jinengjieshaoActivity extends Activity {
 		guanzhu.setOnClickListener(new Button.OnClickListener() {
 			public void onClick(View v) {
 				Intent intent = new Intent();
-				intent.setClass(jinengjieshaoActivity.this,
-						guanzhuActivity.class);
+				intent.setClass(jinengjieshaoActivity.this,guanzhuActivity.class);
 				startActivity(intent);
 			}
 		});
@@ -66,8 +64,8 @@ public class jinengjieshaoActivity extends Activity {
 		jinengdaren.setOnClickListener(new Button.OnClickListener() {
 			public void onClick(View v) {
 				Intent intent = new Intent();
-				intent.setClass(jinengjieshaoActivity.this,
-						jinengdarenActivity.class);
+				intent.putExtra("jinengname", jinengname1);
+				intent.setClass(jinengjieshaoActivity.this,jinengdarenActivity.class);
 				startActivity(intent);
 			}
 		});
@@ -76,8 +74,7 @@ public class jinengjieshaoActivity extends Activity {
 		jinengwenti.setOnClickListener(new Button.OnClickListener() {
 			public void onClick(View v) {
 				Intent intent = new Intent();
-				intent.setClass(jinengjieshaoActivity.this,
-						jinengwentiActivity.class);
+				intent.setClass(jinengjieshaoActivity.this,jinengwentiActivity.class);
 				startActivity(intent);
 			}
 		});

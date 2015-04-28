@@ -12,14 +12,21 @@ import com.example.net.JSONParser;
 import com.yiwu.jingtai.jingtai;
 
 import android.app.Activity;
+import android.content.Intent;
+import android.content.SharedPreferences;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
+import android.widget.ImageButton;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class fangkezhuye extends Activity {
 
 	JSONParser jsonParser = new JSONParser();
 	private String URL = jingtai.URL + "yiwu/fangkezhuye.php";
+	private String URL1 = jingtai.URL + "yiwu/skillmatch.php";
 	TextView name;
 	TextView dengji;
 	TextView sex;
@@ -28,6 +35,11 @@ public class fangkezhuye extends Activity {
 	TextView phone;
 	TextView QQ;
 	TextView intro;
+	ImageButton fanhui;
+	Button faxiaoxi;
+	Button baishi;
+	String jinengName;
+	String darenName;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +54,18 @@ public class fangkezhuye extends Activity {
 		phone = (TextView) findViewById(R.id.fangkezhuye_phone);
 		QQ = (TextView) findViewById(R.id.fangkezhuye_QQ);
 		intro = (TextView) findViewById(R.id.fangkezhuye_qianming);
+		faxiaoxi = (Button) findViewById(R.id.fangkezhuye_faxiaoxi);
+		baishi = (Button) findViewById(R.id.fangkezhuye_baishi); 
+		
+		baishi.setOnClickListener(new Button.OnClickListener() {
+			@Override
+			public void onClick(View v) {
+				Yibu1 yibu1 = new Yibu1();
+				System.out.println("222222222222222222222222222222");
+				yibu1.execute();
+				System.out.println("3333333333333333333333333333333");
+			}
+		});
 		
 		String[] message1 = new String[8];
         Yibu yibu = new Yibu();
@@ -90,6 +114,37 @@ public class fangkezhuye extends Activity {
            }
         }
       protected void onPostExecute(String[] message) {                  
+        }
+    }
+	
+	class Yibu1 extends AsyncTask<String, String, String> {
+		
+        protected String doInBackground(String... args) {
+        	String message = "";
+            List<NameValuePair> params = new ArrayList<NameValuePair>();
+            
+            jinengName = getIntent().getStringExtra("jinengname");
+    		darenName = getIntent().getStringExtra("darenName");
+    		SharedPreferences sharedPreferences= getSharedPreferences("test", Activity.MODE_PRIVATE); 
+			String youxiang =sharedPreferences.getString("youxiang", "");
+			
+            params.add(new BasicNameValuePair("darenName", darenName));
+            params.add(new BasicNameValuePair("jinengName", jinengName));
+            params.add(new BasicNameValuePair("youxiang", youxiang));
+            System.out.println(darenName+jinengName+youxiang);
+           try{
+            JSONObject json = jsonParser.makeHttpRequest(URL1,
+                    "POST", params);
+            System.out.println("11111111111111111111111111111111111111111111");
+            message = json.getString("message");
+            return message; 
+           }catch(Exception e){
+               e.printStackTrace();
+               return "";
+           }
+        }
+      protected void onPostExecute(String message) {  
+    	  Toast.makeText(getApplicationContext(), message, Toast.LENGTH_LONG).show();
         }
     }
 }

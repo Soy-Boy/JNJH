@@ -11,15 +11,6 @@
         android:background="@color/hong"
         android:orientation="horizontal" >
 
-        <ImageButton
-            android:id="@+id/jinengdarenfanhui"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginLeft="16dp"
-            android:background="@color/hong"
-            android:src="@drawable/previous" />
-
         <TextView
             android:id="@+id/v1"
             android:layout_width="fill_parent"

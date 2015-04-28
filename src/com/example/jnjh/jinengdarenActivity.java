@@ -24,12 +24,12 @@ import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ListView;
 
-public class jinengdarenActivity extends Activity implements
-		OnItemClickListener {
+public class jinengdarenActivity extends Activity implements OnItemClickListener {
 
 	private ListView list;
 	private DarenAdapter adapter;
 	private List<Darens> darensList;
+	
 
 	public String URL = jingtai.URL + "yiwu/jinengdaren.php";
 
@@ -65,28 +65,18 @@ public class jinengdarenActivity extends Activity implements
 		list.setOnItemClickListener(this);
 
 		HttpUtils.getGerenzhuyeJson(URL, getDarensHandler);
-
-		// ---------------------------------------------------------------------------Ìø×ª
-		ImageButton jinengdarenfanhui = (ImageButton) findViewById(R.id.jinengdarenfanhui);
-		jinengdarenfanhui.setOnClickListener(new Button.OnClickListener() {
-			public void onClick(View v) {
-				Intent intent = new Intent();
-				intent.setClass(jinengdarenActivity.this,
-						jinengjieshaoActivity.class);
-				startActivity(intent);
-				jinengdarenActivity.this.finish();
-			}
-		});
-		// ---------------------------------------------------------------------------Ìø×ª
 	}
-
-	@Override
+	@Override 
 	public void onItemClick(AdapterView<?> arg0, View arg1, int position,
 			long arg3) {
 		Darens darens = darensList.get(position);
-		Intent intent = new Intent(this, fangkezhuye.class);
+		Intent intent = new Intent();
+		intent.setClass(jinengdarenActivity.this, fangkezhuye.class);
 		intent.putExtra("darenName", darens.getName());
-		System.out.println(darens.getName());
+		String jinengname = getIntent().getStringExtra("jinengname");
+		intent.putExtra("jinengname", jinengname);
+		//System.out.println(darens.getName());
+		//System.out.println(jinengname);
 		startActivity(intent);
 	}
 }

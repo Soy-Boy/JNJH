@@ -12,6 +12,8 @@ import com.example.net.JSONParser;
 import com.yiwu.jingtai.jingtai;
 
 import android.app.Activity;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.AsyncTask;
@@ -60,10 +62,25 @@ public class fangkezhuye extends Activity {
 		baishi.setOnClickListener(new Button.OnClickListener() {
 			@Override
 			public void onClick(View v) {
-				Yibu1 yibu1 = new Yibu1();
-				System.out.println("222222222222222222222222222222");
-				yibu1.execute();
-				System.out.println("3333333333333333333333333333333");
+				AlertDialog.Builder builder = new AlertDialog.Builder(fangkezhuye.this);
+				builder.setTitle("提示")
+						.setMessage("确定要拜师么？")
+						.setCancelable(false)
+						.setPositiveButton("确定", new DialogInterface.OnClickListener() {
+							
+							@Override
+							public void onClick(DialogInterface dialog, int id) {
+								Yibu1 yibu1 = new Yibu1();
+								yibu1.execute();
+							}
+						})
+						.setNegativeButton("取消", new DialogInterface.OnClickListener() {
+							
+							@Override
+							public void onClick(DialogInterface dialog, int id) {
+								dialog.cancel();
+							}
+						}).show();
 			}
 		});
 		

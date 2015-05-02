@@ -54,7 +54,4 @@ public class XiaoxiAdapter extends BaseAdapter {
 		
 		return convertView;
 	}
-	
-	
-
 }

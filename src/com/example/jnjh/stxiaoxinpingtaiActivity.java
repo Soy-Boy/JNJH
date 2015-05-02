@@ -109,7 +109,6 @@ public class stxiaoxinpingtaiActivity extends Activity  implements OnItemClickLi
 		intent.putExtra("xiaoxiurl", xiaoxis.getXiaoxiurl());
 		startActivity(intent);
 	}
-	
 }
   
 

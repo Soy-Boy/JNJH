@@ -111,14 +111,6 @@
                             android:text="等级"
                             android:textColor="#b8860b"
                             android:textSize="15sp" />
-
-                        <ImageButton
-                            android:id="@+id/guanzhu"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_toRightOf="@+id/gerenzhuye_nicheng"
-                            android:background="#ffffff"
-                            android:src="@drawable/guanzhu" />
                     </RelativeLayout>
                 </TableRow>
 

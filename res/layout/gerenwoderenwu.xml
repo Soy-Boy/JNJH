@@ -1,404 +1,448 @@
 <?xml version="1.0" encoding="utf-8"?>
- 
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:orientation="horizontal" >
 
- 
-  <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-      android:layout_width="wrap_content"
-      android:layout_height="match_parent"
-      android:orientation="horizontal" >
-      
-      <TextView
-     android:id="@+id/v2"
-     android:layout_width="fill_parent"
-     android:layout_height="50dp"
-     android:layout_alignParentLeft="true"
-     android:layout_alignParentTop="true"
-     android:text=" "
-     android:background="@color/hong" />
- <TextView
-     android:id="@+id/v1"
-     android:layout_width="wrap_content"
-     android:layout_height="wrap_content"
-     android:layout_centerHorizontal="true"
-     android:layout_alignParentTop="true"
-     android:layout_marginTop="15dp"
-     android:text="我的任务"
-     android:textColor="#ffffff"
-     android:textSize="20sp"/>
-     
-         <ScrollView  android:layout_width="fill_parent"  
-            android:layout_height="wrap_content"   
-            android:layout_marginBottom="40dp" 
-            android:layout_below="@+id/v2"
-             android:background="#ffffff" >  
-<LinearLayout 
-    android:orientation="vertical"
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    >
-   <RelativeLayout 
-      android:layout_width="wrap_content"
-      android:layout_height="match_parent"
-      android:orientation="horizontal" > 
-      <ImageView
-        android:id="@+id/yumao"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/yumao" />
-      <TextView
-            android:id="@+id/jibenxinxi"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="2014.5.18"
-             android:layout_marginTop="10dp"
-             android:layout_toRightOf="@+id/yumao"
-             android:layout_marginLeft="10dp"
-             android:textColor="#b8860b"
-             android:textSize="15sp" />
-      </RelativeLayout>
-<TableLayout
-         android:id="@+id/table1"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:layout_margin="10dp"
-         android:layout_alignParentBottom="true"
-         android:layout_alignParentLeft="true"
-         android:background="@drawable/biankuang"
-         android:collapseColumns="10"
-         android:padding="3dp"
-         android:shrinkColumns="1"
-         android:stretchColumns="0" >   
+    <TextView
+        android:id="@+id/v2"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@color/hong"
+        android:text=" " />
 
-<TableRow>
+    <TextView
+        android:id="@+id/v1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:text="我的任务"
+        android:textColor="#ffffff"
+        android:textSize="20sp" />
 
-             <TextView
-                 android:layout_width="wrap_content"
-                 android:layout_height="wrap_content"
-                 android:layout_marginLeft="15dp"
-                 android:textColor="#b8860b"
-                 android:text="内容：跆拳道和舞蹈"
-                 android:textSize="15sp" />
-         </TableRow>
-<View                              
-        android:layout_height="1dip"   
-        android:background="#f5f5f5" /> 
-         <TableRow>
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/v2"
+        android:layout_marginBottom="40dp"
+        android:background="#ffffff" >
 
-             <TextView
-                 android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                 android:layout_marginLeft="15dp"
-                 android:textColor="#b8860b"
-                 android:text="地点：体育馆"
-                 android:textSize="15sp" />
-         </TableRow>
-<View                              
-        android:layout_height="1dip"   
-        android:background="#f5f5f5" /> 
-         <TableRow>
-
-             <TextView
-                 android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                 android:layout_marginLeft="15dp"
-                 android:textColor="#b8860b"
-                 android:text="状态：进行中"
-                 android:textSize="15sp" />
-         </TableRow>
-<View                              
-        android:layout_height="1dip"   
-        android:background="#f5f5f5" /> 
-         <TableRow>
-
-             <TextView
-                 android:layout_width="wrap_content"
-                  android:layout_height="wrap_content"
-                 android:layout_marginLeft="15dp"
-                 android:textColor="#b8860b"
-                 android:text="结果：未知"
-                 android:textSize="15sp" />
-         </TableRow>
-
-  </TableLayout>
-  <RelativeLayout 
-      android:layout_width="wrap_content"
-      android:layout_height="match_parent"
-      android:orientation="horizontal" > 
-      <ImageView
-        android:id="@+id/yumao"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/yumao" />
-      <TextView
-            android:id="@+id/gexingqianming"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="2014.3.1"
-             android:layout_marginTop="10dp"
-             android:layout_toRightOf="@+id/yumao"
-             android:layout_marginLeft="10dp"
-             android:textColor="#b8860b"
-             android:textSize="15sp" />
-      </RelativeLayout>
-  <TableLayout
-         android:id="@+id/table2"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:layout_margin="10dp"
-         android:layout_alignParentBottom="true"
-         android:layout_alignParentLeft="true"
-         android:background="@drawable/biankuang"
-         android:collapseColumns="10"
-         android:padding="3dp"
-         android:shrinkColumns="1"
-         android:stretchColumns="0" >   
-
-<TableRow>
-              <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-                 android:layout_marginLeft="15dp"
-                 android:textColor="#b8860b"
-             android:text="内容：唱歌和ps"
-             android:textSize="15sp"/>
-         </TableRow>
-         <View                              
-        android:layout_height="1dip"   
-        android:background="#f5f5f5" /> 
-          <TableRow>
-              <TextView
-             android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-                 android:layout_marginLeft="15dp"
-                 android:textColor="#b8860b"
-             android:text="地点：一教A303"
-             android:textSize="15sp" />
-         </TableRow>
-<View                              
-        android:layout_height="1dip"   
-        android:background="#f5f5f5" /> 
-              <TableRow>
-              <TextView
-                  
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-                 android:layout_marginLeft="15dp"
-                 android:textColor="#b8860b"
-             android:text="状态：完成"
-             android:textSize="15sp" />
-         </TableRow>
-         <View                              
-        android:layout_height="1dip"   
-        android:background="#f5f5f5" /> 
-          <TableRow>
-              <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-                 android:layout_marginLeft="15dp"
-                 android:textColor="#b8860b"
-             android:text="结果：成功"
-             android:textSize="15sp"/>
-         </TableRow>
-        
- 
-  </TableLayout>
- <RelativeLayout 
-      android:layout_width="wrap_content"
-      android:layout_height="match_parent"
-      android:orientation="horizontal" > 
-      <ImageView
-        android:id="@+id/yumao"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/yumao" />
-      <TextView
-            android:id="@+id/gexingqianming"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="2013.11.15"
-             android:layout_marginTop="10dp"
-             android:layout_toRightOf="@+id/yumao"
-             android:layout_marginLeft="10dp"
-             android:textColor="#b8860b"
-             android:textSize="15sp" />
-      </RelativeLayout>
-  <TableLayout
-         android:id="@+id/table3"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:layout_margin="10dp"
-         android:layout_alignParentBottom="true"
-         android:layout_alignParentLeft="true"
-         android:background="@drawable/biankuang"
-         android:collapseColumns="10"
-         android:padding="3dp"
-         android:shrinkColumns="1"
-         android:stretchColumns="0" >   
+            android:orientation="vertical" >
 
-<TableRow>
-              <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-                 android:layout_marginLeft="15dp"
-                 android:textColor="#b8860b"
-             android:text="内容：数学和英语"
-             android:textSize="15sp" />
-         </TableRow>
-         <View                              
-        android:layout_height="1dip"   
-        android:background="#f5f5f5" /> 
-          <TableRow>
-              <TextView
-             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-                 android:layout_marginLeft="15dp"
-                 android:textColor="#b8860b"
-             android:text="地点：小吃城"
-             android:textSize="15sp"/>
-         </TableRow>
-<View                              
-        android:layout_height="1dip"   
-        android:background="#f5f5f5" /> 
-              <TableRow>
-              <TextView
-                  
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-                 android:layout_marginLeft="15dp"
-                 android:textColor="#b8860b"
-             android:text="状态：完成"
-             android:textSize="15sp" />
-         </TableRow>
-         <View                              
-        android:layout_height="1dip"   
-        android:background="#f5f5f5" /> 
-          <TableRow>
-              <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-                 android:layout_marginLeft="15dp"
-                 android:textColor="#b8860b"
-             android:text="结果：失败"
-             android:textSize="15sp" />
-         </TableRow>
-        
- 
-  </TableLayout>
- <RelativeLayout 
-      android:layout_width="wrap_content"
-      android:layout_height="match_parent"
-      android:orientation="horizontal" > 
-      <ImageView
-        android:id="@+id/yumao"
-        android:layout_width="20dp"
-        android:layout_height="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginTop="10dp"
-        android:src="@drawable/yumao" />
-      <TextView
-            android:id="@+id/gexingqianming"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:text="2012.12.25"
-             android:layout_marginTop="10dp"
-             android:layout_toRightOf="@+id/yumao"
-             android:layout_marginLeft="10dp"
-             android:textColor="#b8860b"
-             android:textSize="15sp" />
-      </RelativeLayout>
-  <TableLayout
-         android:id="@+id/table4"
-         android:layout_width="match_parent"
-         android:layout_height="wrap_content"
-         android:layout_margin="10dp"
-         android:layout_alignParentBottom="true"
-         android:layout_alignParentLeft="true"
-         android:background="@drawable/biankuang"
-         android:collapseColumns="10"
-         android:padding="3dp"
-         android:shrinkColumns="1"
-         android:stretchColumns="0" >   
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
 
-<TableRow>
-              <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-                 android:layout_marginLeft="15dp"
-                 android:textColor="#b8860b"
-             android:text="内容：数据结构和计算机网络"
-             android:textSize="15sp" />
-         </TableRow>
-         <View                              
-        android:layout_height="1dip"   
-        android:background="#f5f5f5" /> 
-          <TableRow>
-              <TextView
-             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-                 android:layout_marginLeft="15dp"
-                 android:textColor="#b8860b"
-             android:text="地点：一教A503"
-             android:textSize="15sp" />
-         </TableRow>
-<View                              
-        android:layout_height="1dip"   
-        android:background="#f5f5f5" /> 
-              <TableRow>
-              <TextView
-                  
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-                 android:layout_marginLeft="15dp"
-                 android:textColor="#b8860b"
-             android:text="状态：完成"
-             android:textSize="15sp" />
-         </TableRow>
-         <View                              
-        android:layout_height="1dip"   
-        android:background="#f5f5f5" /> 
-          <TableRow>
-              <TextView
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-                 android:layout_marginLeft="15dp"
-                 android:textColor="#b8860b"
-             android:text="结果：成功"
-             android:textSize="15sp" />
-         </TableRow>
-        
- 
-  </TableLayout>
-  </LinearLayout>
-        </ScrollView>
-        <LinearLayout 
-      android:layout_width="fill_parent"
-      android:layout_height="match_parent"
-      android:orientation="horizontal" 
-      android:gravity="bottom">
-         <TextView
-     android:id="@+id/v0"
-     android:layout_width="fill_parent"
-     android:layout_height="50dp"
-     android:layout_alignParentLeft="true"
-     android:layout_alignParentTop="true"
-     android:text=" "
-     android:background="@color/hong"
-     android:textSize="10pt" />
-</LinearLayout>
-         <ImageButton
-             android:id="@+id/woderenwufanhui"
-             android:layout_width="wrap_content"
-             android:layout_height="wrap_content"
-             android:layout_alignBottom="@+id/v1"
-             android:layout_alignParentLeft="true"
-             android:layout_marginLeft="16dp"
-             android:background="@color/hong"
-             android:src="@drawable/previous" />
-         
-        </RelativeLayout>
+                <ImageView
+                    android:id="@+id/yumao"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/yumao" />
+
+                <TextView
+                    android:id="@+id/jibenxinxi"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/yumao"
+                    android:text="2014.5.18"
+                    android:textColor="#b8860b"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <TableLayout
+                android:id="@+id/table1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/biankuang"
+                android:collapseColumns="10"
+                android:padding="3dp"
+                android:shrinkColumns="1"
+                android:stretchColumns="0" >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="内容：跆拳道和舞蹈"
+                        android:textColor="#b8860b"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="地点：体育馆"
+                        android:textColor="#b8860b"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="状态：进行中"
+                        android:textColor="#b8860b"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="结果：未知"
+                        android:textColor="#b8860b"
+                        android:textSize="15sp" />
+                </TableRow>
+            </TableLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/yumao"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/yumao" />
+
+                <TextView
+                    android:id="@+id/gexingqianming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/yumao"
+                    android:text="2014.3.1"
+                    android:textColor="#b8860b"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <TableLayout
+                android:id="@+id/table2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/biankuang"
+                android:collapseColumns="10"
+                android:padding="3dp"
+                android:shrinkColumns="1"
+                android:stretchColumns="0" >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="内容：唱歌和ps"
+                        android:textColor="#b8860b"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="地点：一教A303"
+                        android:textColor="#b8860b"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="状态：完成"
+                        android:textColor="#b8860b"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="结果：成功"
+                        android:textColor="#b8860b"
+                        android:textSize="15sp" />
+                </TableRow>
+            </TableLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/yumao"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/yumao" />
+
+                <TextView
+                    android:id="@+id/gexingqianming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/yumao"
+                    android:text="2013.11.15"
+                    android:textColor="#b8860b"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <TableLayout
+                android:id="@+id/table3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/biankuang"
+                android:collapseColumns="10"
+                android:padding="3dp"
+                android:shrinkColumns="1"
+                android:stretchColumns="0" >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="内容：数学和英语"
+                        android:textColor="#b8860b"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="地点：小吃城"
+                        android:textColor="#b8860b"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="状态：完成"
+                        android:textColor="#b8860b"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="结果：失败"
+                        android:textColor="#b8860b"
+                        android:textSize="15sp" />
+                </TableRow>
+            </TableLayout>
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/yumao"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="10dp"
+                    android:src="@drawable/yumao" />
+
+                <TextView
+                    android:id="@+id/gexingqianming"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_toRightOf="@+id/yumao"
+                    android:text="2012.12.25"
+                    android:textColor="#b8860b"
+                    android:textSize="15sp" />
+            </RelativeLayout>
+
+            <TableLayout
+                android:id="@+id/table4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentLeft="true"
+                android:layout_margin="10dp"
+                android:background="@drawable/biankuang"
+                android:collapseColumns="10"
+                android:padding="3dp"
+                android:shrinkColumns="1"
+                android:stretchColumns="0" >
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="内容：数据结构和计算机网络"
+                        android:textColor="#b8860b"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="地点：一教A503"
+                        android:textColor="#b8860b"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="状态：完成"
+                        android:textColor="#b8860b"
+                        android:textSize="15sp" />
+                </TableRow>
+
+                <View
+                    android:layout_height="1dip"
+                    android:background="#f5f5f5" />
+
+                <TableRow>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="结果：成功"
+                        android:textColor="#b8860b"
+                        android:textSize="15sp" />
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/v0"
+            android:layout_width="fill_parent"
+            android:layout_height="50dp"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:background="@color/hong"
+            android:text=" "
+            android:textSize="10pt" />
+    </LinearLayout>
+
+    <ImageButton
+        android:id="@+id/woderenwufanhui"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/v1"
+        android:layout_alignParentLeft="true"
+        android:layout_marginLeft="16dp"
+        android:background="@color/hong"
+        android:src="@drawable/previous" />
+
+</RelativeLayout>

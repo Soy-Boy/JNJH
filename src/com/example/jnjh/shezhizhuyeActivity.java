@@ -7,37 +7,75 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
-public class shezhizhuyeActivity extends Activity { 
+public class shezhizhuyeActivity extends Activity {
 
 	private SharedPreferences sp = null;
 	private SharedPreferences.Editor editor;
+
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.shezhizhuye);
 		sp = getSharedPreferences("test", MODE_PRIVATE);
-		findViewById(R.id.shezhizhuye_zhuxiao).setOnClickListener(new Button.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				String youxiang = sp.getString("youxiang","");
-				editor = sp.edit();
-				editor.remove("youxiang");
-				editor.commit();
-				System.out.println("youxiang:"+youxiang);
-				Intent intent = new Intent();
-				intent.setClass(shezhizhuyeActivity.this,denglu.class);
-				startActivity(intent);
-				shezhizhuyeActivity.this.finish();
-			}
-		});
-		
-		//----------------------------------------------------------------------跳转
+
+		findViewById(R.id.shezhizhuye_fankui).setOnClickListener(
+				new Button.OnClickListener() {
+
+					@Override
+					public void onClick(View v) {
+						Intent intent = new Intent();
+						intent.setClass(shezhizhuyeActivity.this,
+								yijianfankui.class);
+						startActivity(intent);
+					}
+				});
+		findViewById(R.id.shezhizhuye_guanyu).setOnClickListener(
+				new Button.OnClickListener() {
+
+					@Override
+					public void onClick(View v) {
+						Intent intent = new Intent();
+						intent.setClass(shezhizhuyeActivity.this,
+								guanyuwomen.class);
+						startActivity(intent);
+					}
+				});
+		findViewById(R.id.shezhizhuye_gengxin).setOnClickListener(
+				new Button.OnClickListener() {
+
+					@Override
+					public void onClick(View v) {
+						Intent intent = new Intent();
+						intent.setClass(shezhizhuyeActivity.this,
+								banbenggengxin.class);
+						startActivity(intent);
+					}
+				});
+
+		findViewById(R.id.shezhizhuye_zhuxiao).setOnClickListener(
+				new Button.OnClickListener() {
+
+					@Override
+					public void onClick(View v) {
+						String youxiang = sp.getString("youxiang", "");
+						editor = sp.edit();
+						editor.remove("youxiang");
+						editor.commit();
+						System.out.println("youxiang:" + youxiang);
+						Intent intent = new Intent();
+						intent.setClass(shezhizhuyeActivity.this, denglu.class);
+						startActivity(intent);
+						shezhizhuyeActivity.this.finish();
+					}
+				});
+
+		// ----------------------------------------------------------------------跳转
 		Button jinengzhuyejineng = (Button) findViewById(R.id.jinengzhuyejineng);
 		jinengzhuyejineng.setOnClickListener(new Button.OnClickListener() {
 			public void onClick(View v) {
 				Intent intent = new Intent();
-				intent.setClass(shezhizhuyeActivity.this,jinengzhuyeActivity.class);
+				intent.setClass(shezhizhuyeActivity.this,
+						jinengzhuyeActivity.class);
 				startActivity(intent);
 				shezhizhuyeActivity.this.finish();
 			}
@@ -46,7 +84,8 @@ public class shezhizhuyeActivity extends Activity {
 		jinengzhuyexiaoxi.setOnClickListener(new Button.OnClickListener() {
 			public void onClick(View v) {
 				Intent intent = new Intent();
-				intent.setClass(shezhizhuyeActivity.this,stxiaoxinpingtaiActivity.class);
+				intent.setClass(shezhizhuyeActivity.this,
+						stxiaoxinpingtaiActivity.class);
 				startActivity(intent);
 				shezhizhuyeActivity.this.finish();
 			}
@@ -55,11 +94,12 @@ public class shezhizhuyeActivity extends Activity {
 		jinengzhuyegerenzhuye.setOnClickListener(new Button.OnClickListener() {
 			public void onClick(View v) {
 				Intent intent = new Intent();
-				intent.setClass(shezhizhuyeActivity.this,gerenzhuyeActivity.class);
+				intent.setClass(shezhizhuyeActivity.this,
+						gerenzhuyeActivity.class);
 				startActivity(intent);
 				shezhizhuyeActivity.this.finish();
 			}
 		});
-		//----------------------------------------------------------------------跳转
+		// ----------------------------------------------------------------------跳转
 	}
 }

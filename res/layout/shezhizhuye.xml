@@ -29,10 +29,53 @@
         android:layout_marginTop="50dp"
         android:layout_marginBottom="40dp"
         android:orientation="vertical" >
+        
+        <ImageView 
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@drawable/ic_launcher"
+            android:layout_marginTop="10dp"
+            android:layout_gravity="center_horizontal"/>
+        
+        <Button 
+            android:id="@+id/shezhizhuye_fankui"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/selector_lan"
+            android:textColor="#ffffff"
+            android:text="意见反馈"/>
+        <Button 
+            android:id="@+id/shezhizhuye_guanyu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/selector_lan"
+            android:text="关于我们"/>
+        <Button 
+            android:id="@+id/shezhizhuye_gengxin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/selector_lan"
+            android:text="版本更新"/>
         <Button 
             android:id="@+id/shezhizhuye_zhuxiao"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:textColor="#ffffff"
+            android:background="@drawable/selector_lan"
             android:text="注销"/>
     </LinearLayout>
 

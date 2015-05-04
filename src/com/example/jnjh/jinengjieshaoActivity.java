@@ -69,14 +69,5 @@ public class jinengjieshaoActivity extends Activity {
 				startActivity(intent);
 			}
 		});
-
-		Button jinengwenti = (Button) findViewById(R.id.jinengwenti);
-		jinengwenti.setOnClickListener(new Button.OnClickListener() {
-			public void onClick(View v) {
-				Intent intent = new Intent();
-				intent.setClass(jinengjieshaoActivity.this,jinengwentiActivity.class);
-				startActivity(intent);
-			}
-		});
 	}
 }

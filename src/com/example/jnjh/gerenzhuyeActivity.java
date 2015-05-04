@@ -38,15 +38,6 @@ public class gerenzhuyeActivity extends Activity {
 		dengji = (TextView)findViewById(R.id.gerenzhuye_dengji);
 		qianming = (TextView)findViewById(R.id.gerenzhuye_qianming);
 		//>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>Ìø×ª¹¦ÄÜ
-		ImageButton guanzhu = (ImageButton) findViewById(R.id.guanzhu);
-		guanzhu.setOnClickListener(new Button.OnClickListener() {
-			public void onClick(View v)
-			{
-				Intent intent = new Intent();
-				intent.setClass(gerenzhuyeActivity.this, guanzhuActivity.class);
-				startActivity(intent);
-			}
-		});
 		Button gerenjineng = (Button) findViewById(R.id.gerenjineng);
 		gerenjineng.setOnClickListener(new Button.OnClickListener() {
 			public void onClick(View v)

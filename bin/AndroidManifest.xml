@@ -67,6 +67,10 @@
           <activity android:name="com.example.jnjh.zhuce"></activity>
             <activity android:name="com.example.jnjh.stxiaoxinpingtaiActivity"></activity>
             <activity android:name="fangkezhuye"></activity>
+            <activity android:name="faxiaoxi"></activity>
+            <activity android:name="yijianfankui"></activity>
+            <activity android:name="guanyuwomen"></activity>
+            <activity android:name="banbenggengxin"></activity>
     </application>
 
 </manifest>

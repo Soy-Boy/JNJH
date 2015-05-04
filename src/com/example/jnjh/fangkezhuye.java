@@ -84,6 +84,18 @@ public class fangkezhuye extends Activity {
 			}
 		});
 		
+		findViewById(R.id.fangkezhuye_faxiaoxi).setOnClickListener(new Button.OnClickListener() {
+			
+			@Override
+			public void onClick(View v) {
+				Intent intent = new Intent();
+				darenName = getIntent().getStringExtra("darenName");
+				intent.putExtra("darenName", darenName);
+				intent.setClass(getApplicationContext(), faxiaoxi.class);
+				startActivity(intent);
+			}
+		});
+		
 		String[] message1 = new String[8];
         Yibu yibu = new Yibu();
 			try {
